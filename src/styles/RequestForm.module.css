@@ -1,0 +1,188 @@
+/* Existing styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form {
+  background: var(--secondary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.formGroup textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formGroup input[type="file"] {
+  padding: 0.5rem;
+  border: 2px dashed var(--border);
+  background: transparent;
+}
+
+.formGroup input[type="file"]:hover {
+  border-color: var(--primary);
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* New styles for travel details grid layout */
+.travelDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between grid items */
+  margin-top: 1.5rem; /* Space above the grid */
+}
+
+.travelDetails .formGroup {
+  margin-bottom: 0; /* Remove margin for grid items */
+}
+
+/* Styles for Company Creation Page */
+.companyContainer {
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem; /* Add padding around the container */
+}
+
+.companyForm {
+  background: var(--secondary); /* Background color for the form */
+  padding: 2rem; /* Padding inside the form */
+  border-radius: 1rem; /* Rounded corners */
+  border: 1px solid var(--border); /* Border around the form */
+  margin-top: 2rem; /* Space above the form */
+}
+
+.companyFormGroup {
+  margin-bottom: 1.5rem; /* Space below each form group */
+}
+
+.companyFormGroup label {
+  display: block; /* Make the label block-level */
+  margin-bottom: 0.5rem; /* Space below the label */
+  color: var(--text-secondary); /* Secondary text color */
+}
+
+.companyFormGroup input {
+  width: 100%; /* Full width for input fields */
+  padding: 0.75rem; /* Padding inside the input */
+  border-radius: 0.5rem; /* Rounded corners */
+  border: 1px solid var(--border); /* Border for input fields */
+  background: var(--background); /* Background color for input fields */
+  color: var(--text); /* Text color */
+  font-size: 1rem; /* Font size */
+}
+
+.companyFormGroup input:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: var(--primary); /* Border color on focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1); /* Shadow effect on focus */
+}
+
+.companyFormButton {
+  padding: 0.75rem 1.5rem; /* Padding for the button */
+  background: var(--primary); /* Background color for button */
+  color: white; /* Text color for button */
+  border: none; /* No border */
+  border-radius: 0.5rem; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s; /* Transition for background color */
+}
+
+.companyFormButton:hover {
+  background: var(--primary-dark); /* Darker background on hover */
+}
+
+.companyFormButton:focus {
+  outline: none; /* Remove outline on focus */
+}
+/* Styles for Popup */
+.popup {
+  position: fixed; /* Position it fixed to the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popupContent {
+  background: var(--old-burgundy); /* White background for the popup content */
+  padding: 2rem; /* Padding around the content */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  max-width: 500px; /* Max width of the popup */
+  width: 90%; /* Responsive width */
+  text-align: center; /* Center text */
+}
+
+.popup h2 {
+  margin-bottom: 1rem; /* Space below the heading */
+  color: var(--text); /* Use your defined text color */
+}
+
+.popup p {
+  margin-bottom: 2rem; /* Space below the paragraph */
+  color: var(--text-secondary); /* Secondary text color */
+}
+
+.popupButtons {
+  display: flex;
+}
+.popupButton {
+  padding: 0.75rem 1.5rem; /* Padding for buttons */
+  background: var(--primary); /* Background color for buttons */
+  color: white; /* Text color for buttons */
+  border: none; /* No border */
+  border-radius: 0.5rem; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s; /* Transition for background color */
+  margin: 0 0.5rem; /* Space between buttons */
+}
+
+.popupButton:hover {
+  background: var(--russet); /* Darker background on hover */
+}
+
+.popupButton:focus {
+  outline: none; /* Remove outline on focus */
+}
+
